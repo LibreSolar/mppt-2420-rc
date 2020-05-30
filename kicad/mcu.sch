@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "MPPT 2420 RC"
-Date "2020-02-20"
-Rev "0.1"
+Date "2020-05-30"
+Rev "0.1.1"
 Comp "Libre Solar Technologies GmbH"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: http://libre.solar"
@@ -239,11 +239,11 @@ L Project:R R42
 U 1 1 58ADF91D
 P 6000 2000
 F 0 "R42" V 5925 2000 50  0000 C CNN
-F 1 "470R" V 6075 2000 50  0000 C CNN
+F 1 "1k" V 6075 2000 50  0000 C CNN
 F 2 "LibreSolar:R_0603_1608" H 6000 2000 50  0001 C CNN
 F 3 "" H 6000 2000 50  0000 C CNN
 F 4 "Yageo" H -3500 -2900 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07470RL" H -3500 -2900 50  0001 C CNN "PartNumber"
+F 5 "RC0603FR-071KL" H -3500 -2900 50  0001 C CNN "PartNumber"
 	1    6000 2000
 	1    0    0    1   
 $EndComp
@@ -288,6 +288,8 @@ F 0 "SWD1" H 7500 2400 50  0000 L CNN
 F 1 "ST_Nucleo_SWD" H 7500 1600 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7700 1400 30  0001 C CIN
 F 3 "" H 7850 2050 60  0001 C CNN
+F 4 "Any" H 7700 2000 50  0001 C CNN "Manufacturer"
+F 5 "Standard 2.54 mm pitch 1x5 pin header" H 7700 2000 50  0001 C CNN "PartNumber"
 	1    7700 2000
 	1    0    0    -1  
 $EndComp
@@ -382,7 +384,7 @@ F 5 "24AA32AFT-I/OT" H 2500 7300 60  0001 C CNN "PartNumber"
 	1    2500 6900
 	1    0    0    -1  
 $EndComp
-Text Notes 2000 6200 0    100  ~ 0
+Text Notes 2100 6300 0    100  ~ 0
 EEPROM
 $Comp
 L power:GND #PWR033
@@ -1097,6 +1099,8 @@ F 0 "U2" H 3500 5100 50  0000 C CNN
 F 1 "STM32G431CBTx" H 2300 5100 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 2550 2100 50  0001 R CNN
 F 3 "https://www.st.com/resource/en/datasheet/stm32g431cb.pdf" H 3000 3600 50  0001 C CNN
+F 4 "ST Microelectronics" H 3000 3600 50  0001 C CNN "Manufacturer"
+F 5 "STM32G431CBT6" H 3000 3600 50  0001 C CNN "PartNumber"
 	1    3000 3600
 	-1   0    0    -1  
 $EndComp
@@ -1137,10 +1141,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 4100 2300 4100
 $Comp
-L LibreSolar:VREF #PWR?
+L LibreSolar:VREF #PWR0104
 U 1 1 5E68A8BB
 P 9300 1800
-F 0 "#PWR?" H 9300 1650 50  0001 C CNN
+F 0 "#PWR0104" H 9300 1650 50  0001 C CNN
 F 1 "VREF" H 9315 1973 50  0000 C CNN
 F 2 "" H 9300 1800 50  0001 C CNN
 F 3 "" H 9300 1800 50  0001 C CNN
@@ -1148,14 +1152,56 @@ F 3 "" H 9300 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L LibreSolar:VREF #PWR?
+L LibreSolar:VREF #PWR0107
 U 1 1 5E68C250
 P 10300 1800
-F 0 "#PWR?" H 10300 1650 50  0001 C CNN
+F 0 "#PWR0107" H 10300 1650 50  0001 C CNN
 F 1 "VREF" H 10315 1973 50  0000 C CNN
 F 2 "" H 10300 1800 50  0001 C CNN
 F 3 "" H 10300 1800 50  0001 C CNN
 	1    10300 1800
 	-1   0    0    -1  
 $EndComp
+NoConn ~ 3700 4300
+NoConn ~ 3700 4400
+$Comp
+L power:GND #PWR0125
+U 1 1 5EC4B11B
+P 4400 4300
+F 0 "#PWR0125" H 4400 4050 50  0001 C CNN
+F 1 "GND" H 4400 4150 50  0000 C CNN
+F 2 "" H 4400 4300 50  0000 C CNN
+F 3 "" H 4400 4300 50  0000 C CNN
+	1    4400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 4300
+NoConn ~ 3700 3000
+NoConn ~ 3700 3100
+NoConn ~ 3700 3200
+NoConn ~ 3700 3600
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5ED70582
+P 6200 5300
+F 0 "J6" H 6280 5292 50  0000 L CNN
+F 1 "Conn_01x02" H 6280 5201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 5300 50  0001 C CNN
+F 3 "~" H 6200 5300 50  0001 C CNN
+	1    6200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5300 5400 5300
+Wire Wire Line
+	6000 5400 5400 5400
+Text Label 5400 5300 0    50   ~ 0
+USART1_TX
+Text Label 5400 5400 0    50   ~ 0
+USART1_RX
+Text Notes 5400 4900 0    100  ~ 0
+Debug Serial
 $EndSCHEMATC

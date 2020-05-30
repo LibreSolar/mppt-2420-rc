@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "MPPT 2420 RC"
-Date "2020-02-20"
-Rev ""
+Date "2020-05-30"
+Rev "0.1.1"
 Comp "Libre Solar Technologies GmbH"
-Comment1 ""
+Comment1 "Author: Martin Jäger"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -45,6 +45,8 @@ F 0 "U5" H 2800 3400 50  0000 C CNN
 F 1 "TCAN334" H 3600 3400 50  0000 C CNN
 F 2 "LibreSolar:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3200 2500 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tcan337.pdf" H 3200 3000 50  0001 C CNN
+F 4 "Texas Instruments" H 3200 3000 50  0001 C CNN "Manufacturer"
+F 5 "TCAN334" H 3200 3000 50  0001 C CNN "PartNumber"
 	1    3200 3000
 	1    0    0    -1  
 $EndComp

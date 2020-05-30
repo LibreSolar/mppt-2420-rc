@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "MPPT 2420 RC"
-Date "2020-02-20"
-Rev "0.1"
+Date "2020-05-30"
+Rev "0.1.1"
 Comp "Libre Solar Technologies GmbH"
 Comment1 "Author: Martin Jäger"
 Comment2 "Website: http://libre.solar"
@@ -73,9 +73,11 @@ AR Path="/5C45ED62/5CC2E802" Ref="J?"  Part="1"
 AR Path="/5C5B9319/5CC2E802" Ref="J?"  Part="1" 
 AR Path="/5CC2E802" Ref="J1"  Part="1" 
 F 0 "J1" H 2600 2550 50  0000 R CNN
-F 1 "MKDS 5/ 2-9,5" H 2600 2450 50  0000 R CNN
+F 1 "MKDS 5/ 3-9,5" H 2600 2450 50  0000 R CNN
 F 2 "LibreSolar:Phoenix_Contact_MKDS_5-3-9,5" H 2700 2175 50  0001 C CNN
 F 3 "" H 2675 2400 50  0001 C CNN
+F 4 "Phoenix Contact" H 2700 2400 50  0001 C CNN "Manufacturer"
+F 5 "1714984" H 2700 2400 50  0001 C CNN "PartNumber"
 	1    2700 2400
 	1    0    0    -1  
 $EndComp
@@ -95,6 +97,8 @@ F 0 "J2" H 9100 2450 50  0000 R CNN
 F 1 "MKDS 5/ 2-9,5" H 9100 2350 50  0000 R CNN
 F 2 "LibreSolar:Phoenix_Contact_MKDS_5-2-9,5" H 9200 2075 50  0001 C CNN
 F 3 "" H 9175 2300 50  0001 C CNN
+F 4 "Phoenix Contact" H 9200 2300 50  0001 C CNN "Manufacturer"
+F 5 "1714971" H 9200 2300 50  0001 C CNN "PartNumber"
 	1    9200 2300
 	-1   0    0    -1  
 $EndComp
@@ -265,12 +269,14 @@ Connection ~ 6200 2200
 $Comp
 L Mechanical:Heatsink HS1
 U 1 1 5E1B0EED
-P 4700 7300
-F 0 "HS1" H 4842 7421 50  0000 L CNN
-F 1 "Heatsink" H 4842 7330 50  0000 L CNN
-F 2 "LibreSolar:Fischer_Elektronik_SK573_37,5" H 4712 7300 50  0001 C CNN
-F 3 "~" H 4712 7300 50  0001 C CNN
-	1    4700 7300
+P 2900 6700
+F 0 "HS1" H 3042 6821 50  0000 L CNN
+F 1 "Heatsink" H 3042 6730 50  0000 L CNN
+F 2 "LibreSolar:Fischer_Elektronik_SK573_37,5" H 2912 6700 50  0001 C CNN
+F 3 "~" H 2912 6700 50  0001 C CNN
+F 4 "Fischer Elektronik" H 2900 6700 50  0001 C CNN "Manufacturer"
+F 5 "SK573-37,5" H 2900 6700 50  0001 C CNN "PartNumber"
+	1    2900 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -342,4 +348,6 @@ Wire Wire Line
 	5300 4500 6000 4500
 Text Notes 2400 3300 0    50   ~ 0
 Pin 3 (GNDPWR) used for wind\ngenerators without need for \nreverse current blocking.
+Text Notes 4700 7400 0    50   ~ 0
+Housing: Phoenix Contact BC series\n- Bottom: 2896267\n- Top: 2202302\n- Cover: 2896160
 $EndSCHEMATC
