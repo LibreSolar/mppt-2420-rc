@@ -115,9 +115,9 @@ F 0 "C8" H 8720 2470 50  0000 L CNN
 F 1 "10nF" H 8720 2330 50  0000 L CNN
 F 2 "LibreSolar:C_0603_1608" H 8700 2400 50  0001 C CNN
 F 3 "" H 8700 2400 50  0000 C CNN
-F 4 "" H 6600 650 50  0001 C CNN "Manufacturer"
-F 5 "" H 6600 650 50  0001 C CNN "PartNumber"
-F 6 "50V, X7R" H 6100 300 60  0001 C CNN "Remarks"
+F 4 "Murata" H 6600 650 50  0001 C CNN "Manufacturer"
+F 5 "GCM188R72A103KA37D" H 6600 650 50  0001 C CNN "PartNumber"
+F 6 "100V, X7R" H 6100 300 60  0001 C CNN "Remarks"
 	1    8700 2400
 	-1   0    0    -1  
 $EndComp
@@ -129,20 +129,21 @@ Connection ~ 8700 2200
 Wire Wire Line
 	9000 2200 8700 2200
 $Comp
-L LibreSolar:Fuse F?
+L LibreSolar:Fuse_PlugIn F?
 U 1 1 5DADB2CD
-P 7700 2200
+P 7700 2100
 AR Path="/5C5B93EE/5DADB2CD" Ref="F?"  Part="1" 
 AR Path="/5DADB2CD" Ref="F1"  Part="1" 
-F 0 "F1" H 7700 2396 50  0000 C CNN
-F 1 "25A" H 7700 2305 50  0000 C CNN
-F 2 "LibreSolar:Keystone-Fuse-3557-2" H 7700 2200 50  0001 C CNN
-F 3 "" H 7700 2200 50  0000 C CNN
-	1    7700 2200
+F 0 "F1" H 7550 2200 50  0000 C CNN
+F 1 "25A" H 7850 2200 50  0000 C CNN
+F 2 "LibreSolar:NULL" H 7700 2100 50  0001 C CNN
+F 3 "" H 7700 2100 50  0001 C CNN
+F 4 "Littelfuse" H 7700 2100 50  0001 C CNN "Manufacturer"
+F 5 "0287025.PXCN" H 7700 2100 50  0001 C CNN "PartNumber"
+F 6 "" H 7700 2100 50  0001 C CNN "Config"
+	1    7700 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 2200 8700 2200
 Wire Wire Line
 	5300 2200 5800 2200
 Wire Wire Line
@@ -276,23 +277,24 @@ F 2 "LibreSolar:Fischer_Elektronik_SK573_37,5" H 2912 6700 50  0001 C CNN
 F 3 "~" H 2912 6700 50  0001 C CNN
 F 4 "Fischer Elektronik" H 2900 6700 50  0001 C CNN "Manufacturer"
 F 5 "SK573-37,5" H 2900 6700 50  0001 C CNN "PartNumber"
+F 6 "3x MOSFET clips THFU 2 and thermal interface material needed" H 2900 6700 50  0001 C CNN "Remarks"
 	1    2900 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2900 2200 3900 2200
 Wire Wire Line
-	6200 2200 7600 2200
+	6200 2200 7500 2200
 Wire Wire Line
 	2900 2600 3000 2600
 Wire Wire Line
 	3000 2600 3000 2700
 Wire Wire Line
-	5300 2400 8100 2400
+	5300 2400 7200 2400
 Wire Wire Line
-	8100 2400 8100 2600
+	7200 2400 7200 2600
 Wire Wire Line
-	8100 2600 8700 2600
+	7200 2600 8700 2600
 Connection ~ 8700 2600
 $Sheet
 S 8400 3500 1000 1200
@@ -350,4 +352,19 @@ Text Notes 2400 3300 0    50   ~ 0
 Pin 3 (GNDPWR) used for wind\ngenerators without need for \nreverse current blocking.
 Text Notes 4700 7400 0    50   ~ 0
 Housing: Phoenix Contact BC series\n- Bottom: 2896267\n- Top: 2202302\n- Cover: 2896160
+Text Notes 4000 5900 0    50   ~ 0
+10k NTC thermistor\n\nMatching connector: \nPhoenix Contact 1745894
+$Comp
+L LibreSolar:Fuse_Holder XF1
+U 1 1 5F259FDF
+P 7700 2200
+F 0 "XF1" H 7700 2200 50  0000 C CNN
+F 1 "ATO blade fuse" H 7700 2100 50  0000 C CNN
+F 2 "LibreSolar:Keystone-Fuse-3557-2" H 7700 2200 50  0001 C CNN
+F 3 "" H 7700 2200 50  0001 C CNN
+	1    7700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2200 8700 2200
 $EndSCHEMATC
