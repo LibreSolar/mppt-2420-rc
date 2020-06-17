@@ -296,7 +296,7 @@ F 5 "Standard 2.54 mm pitch 1x5 pin header" H 7700 2000 50  0001 C CNN "PartNumb
 	1    0    0    -1  
 $EndComp
 $Comp
-L Project:D_LED LED1
+L LibreSolar:LED LED1
 U 1 1 58AE0EA3
 P 6000 2300
 AR Path="/58AE0EA3" Ref="LED1"  Part="1" 
@@ -374,11 +374,13 @@ Wire Wire Line
 Text Notes 5100 3300 0    50   ~ 0
 Tight tolerance\nfor CAN interface
 $Comp
-L LibreSolar:24AA01 U6
+L LibreSolar:24AAxx-OT U6
 U 1 1 5929D79A
 P 2500 6900
+AR Path="/5929D79A" Ref="U6"  Part="1" 
+AR Path="/58A68DCB/5929D79A" Ref="U6"  Part="1" 
 F 0 "U6" H 2500 7265 50  0000 C CNN
-F 1 "24AA01" H 2500 7174 50  0000 C CNN
+F 1 "24AA32" H 2500 7174 50  0000 C CNN
 F 2 "LibreSolar:SOT-23-5" H 2500 6500 50  0001 C CNN
 F 3 "" H 2500 7150 60  0000 C CNN
 F 4 "Microchip" H 2500 7400 60  0001 C CNN "Manufacturer"

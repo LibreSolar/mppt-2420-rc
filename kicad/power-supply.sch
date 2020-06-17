@@ -165,7 +165,8 @@ F 2 "Diode_SMD:D_PowerDI-123" V 7400 2700 50  0001 C CNN
 F 3 "" V 7400 2700 50  0000 C CNN
 F 4 "Diodes Inc." H 2700 100 50  0001 C CNN "Manufacturer"
 F 5 "SS16FP" H 2700 100 50  0001 C CNN "PartNumber"
-F 6 "DFLS160-7" H 1300 -100 60  0001 C CNN "Alternative"
+F 6 "" H 1300 -100 60  0001 C CNN "Alternative"
+F 7 "Alternative: DFLS160-7" H 7400 2700 50  0001 C CNN "Remarks"
 	1    7400 2700
 	0    -1   1    0   
 $EndComp
@@ -233,7 +234,8 @@ F 2 "LibreSolar:Bourns_SRN6045TA" V 7950 2500 50  0001 C CNN
 F 3 "" V 7950 2500 50  0000 C CNN
 F 4 "Tayo Yuden" H 7950 2500 60  0001 C CNN "Manufacturer"
 F 5 "NR6045T470M" H 7950 2500 60  0001 C CNN "PartNumber"
-F 6 "Bourns SRR6045TA-470Y" H 7950 2500 60  0001 C CNN "Alternative"
+F 6 "" H 7950 2500 60  0001 C CNN "Alternative"
+F 7 "Alternative: Bourns SRR6045TA-470Y" H 7950 2500 50  0001 C CNN "Remarks"
 	1    7950 2500
 	0    -1   -1   0   
 $EndComp

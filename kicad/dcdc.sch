@@ -76,7 +76,7 @@ F 2 "LibreSolar:L-FERYSTER-DTMSS-27" V 8850 2500 50  0001 C CNN
 F 3 "" H 8650 2500 50  0001 C CNN
 F 4 "Feryster" H 1250 450 50  0001 C CNN "Manufacturer"
 F 5 "DTMSS-27/0,033/20-H" H 1250 450 50  0001 C CNN "PartNumber"
-F 6 "Feryster" H 8650 2500 60  0001 C CNN "Supplier"
+F 6 "" H 8650 2500 60  0001 C CNN "Supplier"
 	1    8650 2500
 	0    -1   -1   0   
 $EndComp
@@ -124,7 +124,7 @@ F 7 "" H 800 400 60  0001 C CNN "Alternative"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Project:LM5107 U1
+L LibreSolar:LM5107 U1
 U 1 1 58C054FE
 P 9200 5700
 F 0 "U1" H 9200 6050 50  0000 C CNN
@@ -257,7 +257,8 @@ F 2 "LibreSolar:D_SOD-123" H 6600 2824 50  0001 C CNN
 F 3 "" V 6600 2700 50  0000 C CNN
 F 4 "ON Semiconductor" H 6600 2700 50  0001 C CNN "Manufacturer"
 F 5 "SS14FL" H 6600 2700 50  0001 C CNN "PartNumber"
-F 6 "Nexperia PMEG4010EGWX" H 6600 2700 50  0001 C CNN "Alternative"
+F 6 "" H 6600 2700 50  0001 C CNN "Alternative"
+F 7 "Alternative: Nexperia PMEG4010EGWX" H 6600 2700 50  0001 C CNN "Remarks"
 	1    6600 2700
 	1    0    0    -1  
 $EndComp
@@ -271,7 +272,8 @@ F 2 "LibreSolar:D_SOD-123" H 6600 1924 50  0001 C CNN
 F 3 "" V 6600 1800 50  0000 C CNN
 F 4 "ON Semiconductor" H 6600 1800 50  0001 C CNN "Manufacturer"
 F 5 "SS14FL" H 6600 1800 50  0001 C CNN "PartNumber"
-F 6 "Nexperia PMEG4010EGWX" H 6600 1800 50  0001 C CNN "Alternative"
+F 6 "" H 6600 1800 50  0001 C CNN "Alternative"
+F 7 "Alternative: Nexperia PMEG4010EGWX" H 6600 1800 50  0001 C CNN "Remarks"
 	1    6600 1800
 	1    0    0    -1  
 $EndComp
@@ -833,7 +835,8 @@ F 2 "LibreSolar:D_SOD-123" H 3100 2524 50  0001 C CNN
 F 3 "" V 3100 2400 50  0000 C CNN
 F 4 "ON Semiconductor" H 3100 2400 50  0001 C CNN "Manufacturer"
 F 5 "SS14FL" H 3100 2400 50  0001 C CNN "PartNumber"
-F 6 "Nexperia PMEG4010EGWX" H 3100 2400 50  0001 C CNN "Alternative"
+F 6 "" H 3100 2400 50  0001 C CNN "Alternative"
+F 7 "Alternative: Nexperia PMEG4010EGWX" H 3100 2400 50  0001 C CNN "Remarks"
 	1    3100 2400
 	1    0    0    -1  
 $EndComp
@@ -1055,6 +1058,7 @@ F 0 "NT1" V 8700 3844 50  0000 L CNN
 F 1 "Net-Tie_2" V 8745 3844 50  0001 L CNN
 F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8700 3800 50  0001 C CNN
 F 3 "~" H 8700 3800 50  0001 C CNN
+F 4 "+info" H 8700 3800 50  0001 C CNN "Config"
 	1    8700 3800
 	0    1    1    0   
 $EndComp
@@ -1066,6 +1070,7 @@ F 0 "NT2" V 9100 3844 50  0000 L CNN
 F 1 "Net-Tie_2" V 9145 3844 50  0001 L CNN
 F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 9100 3800 50  0001 C CNN
 F 3 "~" H 9100 3800 50  0001 C CNN
+F 4 "+info" H 9100 3800 50  0001 C CNN "Config"
 	1    9100 3800
 	0    1    1    0   
 $EndComp

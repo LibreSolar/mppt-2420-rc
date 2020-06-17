@@ -86,7 +86,7 @@ DCDC_HV-
 Text Label 3300 2200 0    50   ~ 0
 DCDC_HV+
 $Comp
-L Project:Screw_Terminal_1x02 J?
+L LibreSolar:Screw_Terminal_1x02_Large J?
 U 1 1 5CE7E6AC
 P 9200 2300
 AR Path="/5C45ED62/5CE7E6AC" Ref="J?"  Part="1" 
@@ -362,6 +362,8 @@ F 0 "XF1" H 7700 2200 50  0000 C CNN
 F 1 "ATO blade fuse" H 7700 2100 50  0000 C CNN
 F 2 "LibreSolar:Keystone-Fuse-3557-2" H 7700 2200 50  0001 C CNN
 F 3 "" H 7700 2200 50  0001 C CNN
+F 4 "Keystone" H 7700 2200 50  0001 C CNN "Manufacturer"
+F 5 "3557-2" H 7700 2200 50  0001 C CNN "PartNumber"
 	1    7700 2200
 	1    0    0    -1  
 $EndComp
